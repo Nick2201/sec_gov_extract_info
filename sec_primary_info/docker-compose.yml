@@ -1,0 +1,6 @@
+version: "1"
+
+services:
+    app:
+      image: sec_primary:latest
+      build: .
