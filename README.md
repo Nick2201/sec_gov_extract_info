@@ -5,7 +5,7 @@
 - [x] : [EXTRACT DESCRIBE INFORMATION](https://github.com/Nick2201/extract_yf_api/issues/1)
 - [ ] : [TRANSFORM AND ANALYSE]
 
-![Python](http://ForTheBadge.com/images/badges/made-with-python.svg)
+![Python|100](http://ForTheBadge.com/images/badges/made-with-python.svg)
 ![Jupiter](https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter)
 
 ![Postgresql](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
