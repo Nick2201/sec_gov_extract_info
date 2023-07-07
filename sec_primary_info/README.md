@@ -1,6 +1,3 @@
----
-arch: etl
----
 # sec_gov_extract_info
 
 ![Python|100](http://ForTheBadge.com/images/badges/made-with-python.svg)
