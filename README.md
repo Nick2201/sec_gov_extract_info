@@ -6,13 +6,13 @@
 - [ ] : [TRANSFORM AND ANALYSE]
 
 ![Python|100](http://ForTheBadge.com/images/badges/made-with-python.svg)
-![Jupiter](https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter)
+![Jupiter|100](https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter)
 
-![Postgresql](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Postgresql|100](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![Linux|100](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
 ___
-![License](https://img.shields.io/badge/License-MIT-green)
+![License|100](https://img.shields.io/badge/License-MIT-green)
 This Python project allows you to extract the current state of international companies trading on the USA stock market. It provides a set of tools to download and process the necessary data.
 
 ## Features
