@@ -1,0 +1,111 @@
+history 5
+history | grep v
+alembic revision --autogenerate -m 'create_table'
+poetry add asyncio
+poetry add asyncpg
+/home/nick/.cache/pypoetry/virtualenvs/dwh-test-5vw4vDqs-py3.10/bin/python /home/nick/projects/sec_gov_extract_info/core/config.py
+poetry remove psycopg2-binary
+poetry rm psycopg2-binary
+poetry add  asyncpg
+poetry add psycopg2-binary
+/home/nick/.cache/pypoetry/virtualenvs/dwh-test-5vw4vDqs-py3.10/bin/python /home/nick/projects/sec_gov_extract_info/core/models/__init__.py
+poetry add aiosqlite
+source /home/nick/.cache/pypoetry/virtualenvs/dwh-test-5vw4vDqs-py3.10/bin/activate.fish
+poetry shell
+git push --all origin
+git commit -am.
+git add .
+git remote add origin git@dev-modul.gitlab.yandexcloud.net:groupanalyst/sql_tools.git
+git init
+which psql
+pip install --upgrade pip
+pip install "apache-airflow[celery]==2.8.4" --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.8.4/constraints-3.8.txt"
+pip list
+psql "host=rc1b-1yh1x7097b2to0k5.mdb.yandexcloud.net \
+    port=6432 \
+    sslmode=verify-full \
+    dbname=rpkm_db1 \
+    user=dev_ln \
+    target_session_attrs=read-write"
+
+SELECT table_schema,table_name FROM information_schema.tables
+ORDER BY table_schema,table_name;
+psql "host=rc1b-1yh1x7097b2to0k5.mdb.yandexcloud.net \
+    port=6432 \
+    sslmode=verify-full \
+    dbname=rpkm_db1 \
+    user=root \
+    target_session_attrs=read-write"
+
+mkdir -p ~/.postgresql && \
+wget "https://storage.yandexcloud.net/cloud-certs/CA.pem" \
+    --output-document ~/.postgresql/root.crt && \
+chmod 0600 ~/.postgresql/root.crt
+
+sudo apt install -y postgresql-client
+sudo apt-get dist-upgrade
+sudo apt-get update
+sudo dpkg --configure --pending
+sudo apt install  postgresql-client
+git clone git@dev-modul.gitlab.yandexcloud.net:groupanalyst/orders_parser.git
+dbt run
+dbt compile
+cd lt_dbt/
+dbt init
+pip install dbt-postgres
+dbt --help
+dbt init dbt_etl_lf
+pip install dbt
+git commit -m '[INIT]'
+git status
+git reset
+touch .gitignore
+pip install -r requirements.txt
+source .venv/bin/activate.fish
+python3 -m venv .venv && source .venv/bin/activate
+bash
+git push
+git commi -am.
+poetry install --no--root
+poetry install
+source /home/nick/.cache/pypoetry/virtualenvs/calc-analyst-CMs4wpXr-py3.10/bin/activate.fish
+poetry init
+pip install poetry
+python3 -m pip install --upgrade pip
+pip3 install poetry
+cd calc_analyst/
+ls
+git clone git@dev-modul.gitlab.yandexcloud.net:groupanalyst/calc_analyst.git
+cd modul/
+mkdir modul
+git clone git@github.com:Nick2201/sec_gov_reports.git
+git clone git@github.com:Nick2201/sec_gov_extract_info.git
+sudo su
+pip install --upgrade pip
+
+pip3 install --root-user-action=ignore requests
+pip install --root-user-action=ignore requests
+sudo pip3 install wheel
+pip3 install wheel
+sudo python3 -m pip uninstall datahub acryl-datahub
+sudo python3 -m pip install --upgrade pip wheel setuptools
+sudo pip install wheel setuptools
+pip install wheel
+pip
+pip -list
+sudo python3 -m pip install --upgrade pip3 wheel setuptools
+docker-compose -version
+docker --version
+sudo apt-get install docker.io
+sudo apt-get install docker-compose-plugin
+source ./.venv/bin/activate.fish
+dir
+sudo python3 -m venv .venv
+sudo python3 -m venv ~/path/to/venv
+python3 -m venv env
+python3 -m venv .venv
+sudo apt update
+sudo apt install python3-venv
+python3 venv .venv
+cd '//wsl.localhost/Ubuntu-22.04/home/nick/.vscode-server'
+fish
