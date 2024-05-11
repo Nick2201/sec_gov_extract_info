@@ -1,0 +1,39 @@
+source:
+  desc:
+    name: tickers
+    utils:
+      connection:
+      postgres: connection = "{dialect}://{user}:{password}@{host}:{port}/{database}"
+
+
+  extract:
+    url: https://www.sec.gov/files/company_tickers.json
+    data_type: json 
+    form: 
+      0:[cik_str,ticker,title]
+  
+  load:
+    type: 
+      Database:
+        test:
+          url: sqlite:///{name}.db
+          host: 127.0.0.1
+          port: 5432
+          user: postgres
+          db: 2_ai
+          password: 22051969
+          schema: dwh
+          table: tickers 
+    # fields: 
+  #  target:
+  #     type: Database
+  #     url: sqlite:///database.db
+  #     table: t_table
+  #     createTable: true
+  #     continueOnError: true
+  #       - name: district
+  #         type: Integer
+  #         finalType: String
+  #         transforms:
+  #           - transform: ConvertType
+  #             fieldType: String
