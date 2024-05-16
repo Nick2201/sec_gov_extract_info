@@ -4,19 +4,21 @@ source:
     utils:
       connection:
       postgres: connection = "{dialect}://{user}:{password}@{host}:{port}/{database}"
-
+  result: ['companyData']
 
   extract:
     url: https://www.sec.gov/files/company_tickers.json
     data_type: json 
     form: 
       0:[cik_str,ticker,title]
+    data: ticker_raw
+    
   
-  load:
+  load: #result
     type: 
       Database:
         test:
-          url: sqlite:///{name}.db
+          url: "postgresql://dev:22051969@localhost:5432/test_db"
           host: 127.0.0.1
           port: 5432
           user: postgres
@@ -24,6 +26,9 @@ source:
           password: 22051969
           schema: dwh
           table: tickers 
+
+all_tables_resullt:
+  list: ['tickers', ]
     # fields: 
   #  target:
   #     type: Database
@@ -37,3 +42,8 @@ source:
   #         transforms:
   #           - transform: ConvertType
   #             fieldType: String
+
+
+#######
+constring_main: # etl_config['source']['load']['type']['Database']['test']['url'] #.format(**db)
+
