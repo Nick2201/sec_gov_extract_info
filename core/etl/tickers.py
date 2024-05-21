@@ -10,24 +10,20 @@ import json
 # import modules
 import requests
 import pandas as pd
-with open("etl_config.yaml") as stream:
-    try:
-        etl_config = (yaml.safe_load(stream))
-    except yaml.YAMLError as exc:
-        print(exc)
+
 
 import pandas as pd
 from sqlalchemy import create_engine
 from datetime import datetime
 from typing import List, Dict, Any
-def extract(): #from
+from config import etl_config
+
+def extract()->List[Dict[str, Any]]:
     headers = {'User-Agent': "email@address.com"}
-
-
     temp_tickers = requests.get(
         etl_config['source']['extract']['url'],
         headers=headers
-        )
+        ).json()
   
     return temp_tickers
 
@@ -46,8 +42,11 @@ def transform (df_raw_tickers:pd.DataFrame)->pd.DataFrame:
 def load(
         df_repare_to_load:pd.DataFrame,
         connect_string:str)->None:
-    # connect_string = etl_config['source']['load']['type']['Database']['test']['url'] #.format(**db)
     engine = create_engine(connect_string)
     df_repare_to_load.to_sql('raw_tickers', con=engine, if_exists='replace')
 
     return None
+
+
+# def etl():
+#     extract
